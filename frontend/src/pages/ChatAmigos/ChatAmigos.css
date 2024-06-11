@@ -1,0 +1,17 @@
+.card {
+  width: 18rem;
+}
+
+.cards-container {
+  display: flex;
+  overflow-x: auto; /* Agrega una barra de desplazamiento horizontal si es necesario */
+}
+
+.cards-inner-container {
+  display: flex;
+}
+
+.card {
+  width: 200px; /* Ajusta el ancho de las cards según tus necesidades */
+  margin: 10px;
+}

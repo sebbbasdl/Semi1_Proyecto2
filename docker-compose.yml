@@ -1,0 +1,29 @@
+version: '3' 
+
+# contenedores a levantar
+services:
+  # contenedor del backend
+  backend:
+    container_name: backend
+    build: ./backend/
+    image: backend_semi1
+    restart: always
+    expose:
+      - '5000'
+    ports:
+      - "5000:5000"
+
+  # contenedor del frontend
+  frontend:
+    container_name: frontend 
+    restart: always
+    build: ./frontend/
+    image: frontend_semi1
+    expose:
+      - '3000'
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    links:
+      - backend 

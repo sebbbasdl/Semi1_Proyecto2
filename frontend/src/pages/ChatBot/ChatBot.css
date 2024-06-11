@@ -1,0 +1,64 @@
+.chat-container-bot {
+    max-height: 700px; /* Ajusta la altura máxima según tus necesidades */
+    overflow-y: auto; /* Agrega una barra de desplazamiento vertical si es necesario */
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid #ccc; /* Borde para el contenedor de mensajes */
+    border-radius: 8px; /* Bordes redondeados */
+  }
+  
+  .message {
+    max-width: 70%;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .left {
+    align-self: flex-start;
+    background-color: #3b3333; /* Color del fondo para los mensajes a la izquierda */
+    color: #fff;
+  }
+  
+  .right {
+    align-self: flex-end;
+    background-color: #137717; /* Color del fondo para los mensajes a la derecha */
+    color: #fff; /* Color del texto para los mensajes a la derecha */
+  }
+  
+  .input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .textarea-chat {
+    flex: 1;
+    border-radius: 8px; 
+    margin-right: 10px;
+    resize: none; /* Evita que el usuario pueda redimensionar el textarea */
+  }
+  
+  .button-enviar {
+    background-color: #4874d3;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .left {
+    align-self: flex-start;
+    background-color: #3b3333; /* Puedes cambiar el color según tus preferencias */
+    color: #fff;
+  }
+  
+  /* Estilo para los mensajes a la derecha (bot) */
+  .right {
+    align-self: flex-end;
+    background-color: #137717; /* Puedes cambiar el color según tus preferencias */
+    color: #fff; /* Puedes cambiar el color del texto según tus preferencias */
+  }

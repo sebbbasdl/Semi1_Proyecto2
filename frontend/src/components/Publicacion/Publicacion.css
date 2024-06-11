@@ -1,0 +1,129 @@
+.post-container {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 25px;
+    padding: 16px;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .post-image {
+    width: 600px;
+    max-height: 300px;
+    object-fit: calc();
+    border-radius: 8px;
+  }
+  
+  .header-text {
+    flex:1;
+    margin-left: 10px; 
+  }
+
+  .header-background {
+    background-color: #750000; 
+    padding: 125px; 
+    border-radius: 5px; 
+  }
+  
+  .name {
+    font-weight: bold;
+    font-size: 1.2em; 
+    margin-bottom: 5px; 
+  }
+  
+  .date {
+    color: #888;
+    font-size: 0.8em; 
+  }
+  
+  .content {
+    margin-top: 8px;
+  }
+
+  .content-background {
+    background-color: #000000;
+    padding: 16px; /* Espaciado interno para la descripción */
+    border-radius: 8px; /* Bordes redondeados para la descripción */
+    overflow: hidden; /* Oculta el contenido que desborda */
+    max-height: 200px; /* Altura máxima para el contenedor de la descripción */
+  }
+  
+  .description {
+    font-size: 1em;
+    white-space: pre-line; /* Mantiene los saltos de línea */
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    
+  }
+  
+  
+  .comentarios-container {
+    margin-top: 15px;
+  }
+  
+  .ver-comentarios-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .ver-comentarios-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .comentarios-section {
+    margin-top: 15px;
+  }
+  
+  .comentarios-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+  }
+  
+  .comentarios-list li {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #323333;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .comentarios-list li strong {
+    color: #007bff;
+  }
+  
+  .nuevo-comentario-input {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .enviar-comentario-btn {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+  }
+  
+  .enviar-comentario-btn:hover {
+    background-color: #218838;
+  }

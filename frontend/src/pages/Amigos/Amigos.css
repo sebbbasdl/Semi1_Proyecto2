@@ -1,0 +1,76 @@
+.amigos-main {
+    background-color: #1a1a1a; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    padding: 50px; /* Ajusta el espacio interno según sea necesario */
+    text-align: center; /* Centrar el contenido */
+  }
+  
+  .amigos-container {
+    display: flex;
+    justify-content: center; /* Centrar las tablas horizontalmente */
+    align-items: center; /* Centrar las tablas verticalmente */
+    flex-wrap: wrap; /* Permitir que las tablas se envuelvan en pantallas más pequeñas */
+  }
+  
+  .amigos-table-container {
+    margin: 20px;
+    text-align: center; /* Centrar el contenido de las tablas */
+  }
+  
+  .amigos-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #ffffff; /* Borde para cada celda */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para efecto visual */
+    transition: box-shadow 0.3s ease; /* Transición de la sombra al pasar el mouse */
+  }
+  
+  .amigos-table th, .amigos-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .amigos-table th {
+    background-color: #333333; /* Fondo gris oscuro para encabezados */
+  }
+  
+  .amigos-table td:hover {
+    background-color: #555555; /* Cambia el color de fondo al pasar el mouse */
+  }
+  
+  .amigos-table th:not(:first-child),
+  .amigos-table td:not(:first-child) {
+    border-left: none; /* Quita el borde izquierdo en todas las celdas excepto la primera */
+  }
+  
+  button {
+    background-color: #4CAF50; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición del color de fondo al pasar el mouse */
+  }
+  
+  button:hover {
+    background-color: #45a049; /* Color de fondo del botón al pasar el mouse */
+  }
+
+  .amigos-table td h5 {
+    display: inline; /* Muestra el elemento <h5> como en línea */
+    margin: 0; /* Elimina los márgenes predeterminados del elemento <h5> */
+    padding-right: 5px; /* Ajusta el espacio entre el texto y el botón */
+  }
+
+  .avatar {
+    width: 100px;
+    height: 70px;
+    border-radius: 50%; 
+    margin-right: 10px; 
+
+  }

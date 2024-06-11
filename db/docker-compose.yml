@@ -1,0 +1,17 @@
+version: '3' # versión de docker 
+
+services:
+  db:
+    container_name: db
+    build: .
+    image: db_proyecto2_semi1
+    restart: always
+    ports:
+      - '3306:3306'
+    expose:
+      - '3306'
+    volumes:
+      - ./db_data:/var/lib/mysql
+
+volumes:
+  db_data:
